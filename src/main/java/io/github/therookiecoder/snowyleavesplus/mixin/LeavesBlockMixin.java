@@ -62,7 +62,7 @@ public abstract class LeavesBlockMixin {
         }
     }
 
-    @Inject(method = "randomTick", at = @At("HEAD"))
+    @Inject(method = "tick", at = @At("HEAD"))
     private void randomTickInject(
         BlockState state,
         ServerWorld world,
